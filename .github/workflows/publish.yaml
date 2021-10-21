@@ -24,6 +24,6 @@ jobs:
         npm install
     - name: Publish
       run: |
-        npm run deploy
+        npm run deploy-ci
       env:
         GITHUB_TOKEN: ${{ github.token }}
