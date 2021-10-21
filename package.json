@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "npm run build && gh-pages -d public"
+    "deploy": "npm run build && gh-pages -d public -b gh-pages -m \"Manual commit\"",
+    "deploy-ci": "npm run build && gh-pages -d public -b gh-pages -m \"Automated commit\" -u \"github-actions-bot <support+actions@github.com>\""
   },
   "dependencies": {
     "gatsby": "^3.14.3",
