@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "npm run build && gh-pages -d public -b gh-pages"
+    "deploy": "npm run build && gh-pages -d public -b gh-pages",
+    "deploy-ci": "npm run build && gh-pages -d public -b gh-pages -r https://${GITHUB_TOKEN}@github.com/jeremycz/jeremycz.github.io.git"
   },
   "dependencies": {
     "gatsby": "^3.14.3",
